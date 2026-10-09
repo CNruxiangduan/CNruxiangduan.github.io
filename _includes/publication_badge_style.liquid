@@ -1,0 +1,39 @@
+<style>
+/* Shared publication badges for the homepage and the full publications page.
+   Intentionally use the theme's existing BibTeX abbr tags, so new papers inherit it. */
+.publications .abbr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.publications .abbr abbr.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 170px;
+  min-height: 33px;
+  margin: 0;
+  padding: 0.42rem 0.35rem;
+  border: 0;
+  border-radius: 8px !important;
+  color: #fff !important;
+  background: linear-gradient(180deg, #c014c9 0%, #a000b1 100%) !important;
+  box-shadow: 0 4px 11px rgba(85, 0, 97, .2);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.publications .abbr abbr.badge a {
+  color: #fff !important;
+  text-decoration: none;
+}
+@media (max-width: 575px) {
+  .publications .abbr { margin-bottom: 0.5rem; }
+  .publications .abbr abbr.badge { max-width: 170px; }
+}
+</style>

@@ -11,6 +11,8 @@ nav_order: 2
 
 The two WTAL manuscripts are listed as preprints awaiting an arXiv posting. No arXiv identifiers or links are claimed until the papers are publicly available.
 
+{% include publication_badge_style.liquid %}
+
 <div class="publications">
 {% bibliography --group_by year %}
 </div>
