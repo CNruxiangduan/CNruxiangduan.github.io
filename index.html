@@ -60,7 +60,35 @@
 .academic-home .publications .links { margin-top: .2rem; }
 .academic-home .publications .links a.btn { font-size: .76rem; padding: .14rem .4rem; margin: .1rem .2rem .1rem 0; }
 .academic-home .publications .abbr { font-size: .85rem; }
-.academic-home .social { margin-top: 1.4rem; }
+/* Compact, text-only contact row; avoid al-folio's large social-icon styles. */
+.academic-home .academic-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.6rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.18);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+.academic-home .academic-contact-links a {
+  color: inherit !important;
+  opacity: 0.7;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none !important;
+}
+.academic-home .academic-contact-links a:hover,
+.academic-home .academic-contact-links a:focus-visible {
+  opacity: 1;
+  text-decoration: underline !important;
+}
+.academic-home .academic-contact-links .sep {
+  opacity: 0.4;
+  font-size: 0.78rem;
+}
 @media(max-width: 620px) {
   .academic-home .post-title { font-size: 2.25rem; }
   .academic-home .academic-profile { width: 35%; margin-left: 1rem; }
@@ -124,7 +152,7 @@
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{130--135}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
   <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/ICSE68658.2025.11407646}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:auduanruxiang@mail.scut.edu.cn" title="Email Ruxiang Duan">Email</a>  ·  <a href="https://github.com/CNruxiangduan" title="GitHub" rel="external nofollow noopener" target="_blank">GitHub</a>  ·  <a href="https://orcid.org/0009-0002-7512-1934" title="ORCID" rel="external nofollow noopener" target="_blank">ORCID</a>  ·  <a href="/publications/" title="Publications">Publications</a> </div> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Ruxiang Duan. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <nav class="academic-contact-links" aria-label="Academic contact links"> <a href="mailto:auduanruxiang@mail.scut.edu.cn" title="Email Ruxiang Duan">Email</a> <span class="sep" aria-hidden="true">·</span> <a href="https://github.com/CNruxiangduan" title="GitHub" rel="external nofollow noopener" target="_blank">GitHub</a> <span class="sep" aria-hidden="true">·</span> <a href="https://orcid.org/0009-0002-7512-1934" title="ORCID" rel="external nofollow noopener" target="_blank">ORCID</a> <span class="sep" aria-hidden="true">·</span> <a href="/publications/" title="Publications">Publications</a> </nav> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Ruxiang Duan. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
