@@ -5,7 +5,7 @@ permalink: /
 subtitle: Ph.D. Candidate · School of Automation Science and Engineering · South China University of Technology
 profile:
   align: right
-  image:
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Guangzhou, China</p>
