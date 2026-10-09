@@ -22,34 +22,44 @@ layout: default
 .academic-home .publications .links { margin-top: .2rem; }
 .academic-home .publications .links a.btn { font-size: .76rem; padding: .14rem .4rem; margin: .1rem .2rem .1rem 0; }
 .academic-home .publications .abbr { font-size: .85rem; }
-/* Compact, text-only contact row; avoid al-folio's large social-icon styles. */
-.academic-home .academic-contact-links {
+/* Compact icon-only academic contact links; works in light and dark mode. */
+.academic-home .academic-contact-icons {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  margin-top: 1.6rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid rgba(128, 128, 128, 0.18);
-  font-size: 0.82rem;
-  font-weight: 400;
-  line-height: 1.55;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.16);
 }
-.academic-home .academic-contact-links a {
+.academic-home .academic-contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
   color: inherit !important;
-  opacity: 0.7;
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 19px;
+  line-height: 1;
+  opacity: 0.68;
+  border-radius: 6px;
   text-decoration: none !important;
+  transition: opacity 150ms ease, background-color 150ms ease;
 }
-.academic-home .academic-contact-links a:hover,
-.academic-home .academic-contact-links a:focus-visible {
+.academic-home .academic-contact-icons a:hover,
+.academic-home .academic-contact-icons a:focus-visible {
   opacity: 1;
-  text-decoration: underline !important;
+  background-color: rgba(128, 128, 128, 0.10);
 }
-.academic-home .academic-contact-links .sep {
-  opacity: 0.4;
-  font-size: 0.78rem;
+.academic-home .academic-contact-icons a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.academic-home .academic-contact-icons i {
+  display: inline-block;
+  font-size: 19px !important;
+  line-height: 1;
 }
 @media(max-width: 620px) {
   .academic-home .post-title { font-size: 2.25rem; }
@@ -76,14 +86,11 @@ layout: default
     {% include selected_papers.liquid %}
 
     {% if page.social %}
-    <nav class="academic-contact-links" aria-label="Academic contact links">
-      <a href="mailto:auduanruxiang@mail.scut.edu.cn" title="Email Ruxiang Duan">Email</a>
-      <span class="sep" aria-hidden="true">·</span>
-      <a href="https://github.com/CNruxiangduan" title="GitHub">GitHub</a>
-      <span class="sep" aria-hidden="true">·</span>
-      <a href="https://orcid.org/0009-0002-7512-1934" title="ORCID">ORCID</a>
-      <span class="sep" aria-hidden="true">·</span>
-      <a href="{{ '/publications/' | relative_url }}" title="Publications">Publications</a>
+    <nav class="academic-contact-icons" aria-label="Academic contact links">
+      <a href="mailto:auduanruxiang@mail.scut.edu.cn" title="Email" aria-label="Email Ruxiang Duan"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://github.com/CNruxiangduan" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://orcid.org/0009-0002-7512-1934" title="ORCID" aria-label="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+      <a href="{{ '/publications/' | relative_url }}" title="Publications" aria-label="Publications"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></a>
     </nav>
     {% endif %}
   </article>
