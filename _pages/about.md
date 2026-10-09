@@ -22,3 +22,5 @@ latest_posts:
 My name is **Ruxiang Duan**, and I am a Ph.D. candidate in the **School of Automation Science and Engineering** at **South China University of Technology**. My research interests include **Computer Vision**, **Video Understanding**, and **Multimodal Learning**, with a particular focus on small-object detection, skeleton-based action recognition, and weakly supervised temporal action localization.
 
 My research also involves real-time vision systems and collaborative work on video virtual try-on. You can find my [publications]({{ '/publications/' | relative_url }}) and [research code](https://github.com/CNruxiangduan) online.
+
+**Email:** [auduanruxiang@mail.scut.edu.cn](mailto:auduanruxiang@mail.scut.edu.cn)
