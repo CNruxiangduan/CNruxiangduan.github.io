@@ -6,7 +6,7 @@ subtitle: <a href="https://www.scut.edu.cn/en/">South China University of Techno
 
 profile:
   align: right
-  image: 
+  image: prof_pic.jpg
   image_circular: false
 
 selected_papers: false
