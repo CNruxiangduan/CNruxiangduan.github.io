@@ -3,7 +3,7 @@ layout: page
 title: code
 permalink: /code/
 description: Public research code repositories.
-nav: true
+nav: false
 nav_order: 4
 ---
 

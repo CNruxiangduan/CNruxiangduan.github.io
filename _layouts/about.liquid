@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<style>
+/* Minimal academic landing page modeled on the clean al-folio reference layout. */
+.academic-home { max-width: 930px; margin: 0 auto; }
+.academic-home .post-header { margin-bottom: 1.65rem; }
+.academic-home .post-title { font-size: 2.65rem; font-weight: 500; letter-spacing: -.035em; margin-bottom: .25rem; }
+.academic-home .desc { font-size: .99rem; opacity: .75; }
+.academic-home .academic-profile { float: right; width: 26%; max-width: 235px; margin: 0 0 1.1rem 1.8rem; }
+.academic-home .academic-profile img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 5px; box-shadow: 0 1px 5px rgba(0,0,0,.11); }
+.academic-home .clearfix { font-size: 1rem; line-height: 1.75; }
+.academic-home h2 { font-size: 1.45rem; font-weight: 500; margin-top: 1.55rem; margin-bottom: .95rem; }
+.academic-home h2 a { color: inherit; text-decoration: none; }
+.academic-home .publications ol.bibliography { margin: 0; padding-left: 0; }
+.academic-home .publications ol.bibliography li { margin-bottom: 1.15rem; }
+.academic-home .publications .title { font-size: 1rem; font-weight: 600; line-height: 1.45; }
+.academic-home .publications .author, .academic-home .publications .periodical { font-size: .9rem; line-height: 1.5; }
+.academic-home .publications .links { margin-top: .2rem; }
+.academic-home .publications .links a.btn { font-size: .76rem; padding: .14rem .4rem; margin: .1rem .2rem .1rem 0; }
+.academic-home .publications .abbr { font-size: .85rem; }
+.academic-home .publications .abbr .badge { white-space: normal; line-height: 1.2; font-size: .78rem; font-weight: 500; }
+.academic-home .social { margin-top: 1.4rem; }
+@media(max-width: 620px) {
+  .academic-home .post-title { font-size: 2.25rem; }
+  .academic-home .academic-profile { width: 35%; margin-left: 1rem; }
+  .academic-home .publications .abbr { margin-bottom: .3rem; }
+}
+</style>
+
+<div class="post academic-home">
+  <header class="post-header">
+    <h1 class="post-title">Ruxiang Duan</h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+  <article>
+    <div class="academic-profile">
+      <img src="https://avatars.githubusercontent.com/u/19393791?v=4" loading="eager" alt="Ruxiang Duan GitHub profile photo">
+    </div>
+    <div class="clearfix">{{ content }}</div>
+
+    <h2>Recent Works</h2>
+    {% include recent_works.liquid %}
+
+    <h2>Selected Publications</h2>
+    {% include selected_papers.liquid %}
+
+    {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">{% include social.liquid %}</div>
+    </div>
+    {% endif %}
+  </article>
+</div>

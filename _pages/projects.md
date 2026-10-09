@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Research in computer vision, video understanding and multimodal learning.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [research]
 horizontal: true

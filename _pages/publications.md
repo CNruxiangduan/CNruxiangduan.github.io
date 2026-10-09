@@ -2,15 +2,15 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Peer-reviewed publications and publicly available preprints.
+description: Journal articles, conference papers, and preprints.
 nav: true
 nav_order: 2
 ---
 
-Journal articles and publicly available preprints are listed here; preprints are labeled accordingly.
+## Publications and Preprints
 
-{% include bib_search.liquid %}
+The two WTAL manuscripts are listed as preprints awaiting an arXiv posting. No arXiv identifiers or links are claimed until the papers are publicly available.
 
 <div class="publications">
-{% bibliography %}
+{% bibliography --group_by year %}
 </div>
