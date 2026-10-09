@@ -2,33 +2,32 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle: Ph.D. Candidate · School of Automation Science and Engineering · South China University of Technology
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image:
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+    <p>Guangzhou, China</p>
+selected_papers: true
+social: true
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
+  enabled: false
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! I am **Ruxiang Duan**, a Ph.D. candidate at the **School of Automation Science and Engineering, South China University of Technology**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests lie in **computer vision, video understanding, and multimodal learning**. I focus on building robust visual perception and action understanding methods for challenging real-world scenarios.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Research Interests
+
+- **Small Object Detection** — Transformer-based detection of tiny objects in aerial, maritime, and surveillance imagery.
+- **Skeleton-based Action Recognition** — Graph and hypergraph representations of human motion, with an emphasis on hand-part relations and retrieval-enhanced learning.
+- **Weakly Supervised Temporal Action Localization** — Reliable proposals and temporal boundary refinement from video-level labels.
+- **Multimodal and Generative Vision** — Vision-language learning and efficient video generation, including streaming virtual try-on.
+
+I am interested in connecting methodological advances with practical visual understanding systems. Please explore my [research projects]({{ '/projects/' | relative_url }}), [publications]({{ '/publications/' | relative_url }}), and [public code](https://github.com/CNruxiangduan).
+
+### Selected Publications
