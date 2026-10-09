@@ -16,7 +16,7 @@ footer_text: >
 
 keywords: Ruxiang Duan, computer vision, small object detection, action recognition, video understanding
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔬
+icon: ⚛️
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://cnruxiangduan.github.io
